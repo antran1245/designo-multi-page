@@ -1,0 +1,32 @@
+@use 'App';
+
+.navbar {
+    margin-top: 64px;
+    margin-bottom: 67px;
+    padding: 0 !important;
+
+    // Brand/Logo
+    .navbar-brand img {
+        width: 196px;
+        height: 24px;
+    }
+
+    // Links
+    .navbar-nav {
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-nav *{
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: App.$darkGrey;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .navbar-nav *:hover {
+        text-decoration: underline;
+    }
+}
