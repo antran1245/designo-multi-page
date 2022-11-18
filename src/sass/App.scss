@@ -1,0 +1,35 @@
+// Global color variables
+$peach : #E7816B;
+$black : #1D1C1E;
+$white : #FFFFFF;
+$lightPeach : #FFAD9B;
+$darkGrey : #333136;
+$lightGrey : #F1F3F5;
+
+// Global heading and body styles
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
