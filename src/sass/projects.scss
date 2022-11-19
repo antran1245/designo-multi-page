@@ -1,0 +1,21 @@
+@use 'App';
+
+#projects {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    img {
+        padding: 0;
+        border-radius: 15px;
+    }
+    img:nth-of-type(1) {
+        grid-row: 1 / span 2;
+    }
+    img:nth-of-type(3) {
+        margin-top: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {}

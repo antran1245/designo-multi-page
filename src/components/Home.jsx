@@ -1,6 +1,7 @@
 import { Col, Row, Button } from "react-bootstrap";
-import singleCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
+import singleCircle from '../assets/home/desktop/bg-pattern-hero-home.svg'
 import '../sass/home.scss'
+import '../sass/projects.scss'
 
 export default function Home() {
     return(
@@ -27,6 +28,11 @@ export default function Home() {
                     <img src={singleCircle} alt="big single circle" id="singleCircle"/>
                     <img src={require('../assets/home/desktop/image-hero-phone.png')} alt="phone" id="phone"/>
                 </div>
+            </Row>
+            <Row id="projects">
+                    <img src={require('../assets/home/desktop/image-web-design-large.jpg')} alt="large web design"/>
+                    <img src={require('../assets/home/desktop/image-app-design.jpg')} alt="app design"/>
+                    <img src={require('../assets/home/desktop/image-graphic-design.jpg')} alt="app design"/>
             </Row>
         </>
     )

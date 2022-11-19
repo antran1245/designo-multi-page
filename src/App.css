@@ -6,6 +6,12 @@
   font-family: 'Jost', normal;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #leaf-image {
   position: absolute;
   top: 475px;
