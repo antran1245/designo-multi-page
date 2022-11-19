@@ -1,0 +1,143 @@
+@use 'App';
+
+// Top peach box container
+#headerBox {
+    height: 640px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: App.$white;
+    position: relative;
+    
+    .heading {
+        font-weight: 500;
+        margin-bottom: 11px;
+        @extend .heading1;
+    }
+    // Learn More button
+    button {
+        width: 156px;
+        height: 56px;
+        border-radius: 8px;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin-top: 40px;
+        color: App.$darkGrey;
+        background-color: App.$white;
+        border: none;
+        
+        &:active {
+            outline: none;
+            color: App.$white;
+            background-color: App.$lightPeach;
+        }
+    }
+    
+    // Images right side
+    #headerImages {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 640px;
+        width: 640px;
+    }
+    #singleCircle {
+        transform: rotate(90deg);
+        width: 640px;
+        height: 640px;
+    }
+    #phone {
+        position: absolute;
+        right: -80px;
+        top: 0;
+    }
+}
+
+// Tablet
+@media only screen and (max-width: 992px) {
+    #headerBox {
+        align-items: flex-start;
+        justify-content: center;
+        p {
+            margin-bottom: 0;
+        }
+
+        #headerText {
+            width: 573px;
+            text-align: center;
+            padding: 0 58px;
+            z-index: 1;
+        }
+        .heading {
+            margin-top: 60px;
+            margin-bottom: 8px;
+        }
+        button {
+            margin-top: 19px;
+            width: 152px;
+        }
+
+        #singleCircle {
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        #phone {
+            right: 23.5%;
+            top: 45%;
+            height: 573px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #headerBox {
+        .heading {
+            font-size: 32px;
+            line-height: 36px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+        #phone {
+            right: 12.5%;
+        }
+    }
+}
+
+// Phone
+@media only screen and (max-width: 560px) {
+    #headerBox {
+        width: 100vw;
+        border-radius: 0;
+        #phone {
+            top: 50%;
+            right: 2.5%;
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    #headerBox{
+        #phone {
+            right: 13%;
+        }
+    }
+}
+@media only screen and (max-width: 412px) {
+    #headerBox{
+        #phone {
+            right: 2.5%;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    #headerBox{
+        #phone {
+            right: -3%;
+        }
+    }
+}

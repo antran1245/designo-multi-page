@@ -7,29 +7,33 @@ $darkGrey : #333136;
 $lightGrey : #F1F3F5;
 
 // Global heading and body styles
-h1, h2, h3 {
+.heading1, .heading2, .heading3 {
     font-weight: 500;
 }
 
-h1 {
+.heading1 {
     font-size: 48px;
     line-height: 48px;
 }
 
-h2 {
+.heading2 {
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: 2px;
 }
 
-h3 {
+.heading3 {
     font-size: 20px;
     line-height: 26px;
-    letter-spacing: 5px;
 }
 
 p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+}
+
+// Global peach box on all page
+.peach-box {
+    width: 100%;
+    background-color: $peach;
 }
