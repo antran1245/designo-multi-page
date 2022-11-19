@@ -30,9 +30,34 @@ export default function Home() {
                 </div>
             </Row>
             <Row id="projects">
-                    <img src={require('../assets/home/desktop/image-web-design-large.jpg')} alt="large web design"/>
-                    <img src={require('../assets/home/desktop/image-app-design.jpg')} alt="app design"/>
-                    <img src={require('../assets/home/desktop/image-graphic-design.jpg')} alt="app design"/>
+                    <div className="d-none d-md-block">
+                        <img src={require('../assets/home/desktop/image-web-design-large.jpg')} alt="large web design"/>
+                        <div className="overlay">
+                            <p className="heading2">WEB DESIGN</p>
+                            <p>VIEW PROJECTS</p>
+                        </div>
+                    </div>
+                    <div className="d-block d-md-none">
+                        <img src={require('../assets/home/desktop/image-web-design-small.jpg')} alt="small web design"/>
+                        <div className="overlay">
+                            <p className="heading2">WEB DESIGN</p>
+                            <p>VIEW PROJECTS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={require('../assets/home/desktop/image-app-design.jpg')} alt="app design"/>
+                        <div className="overlay">
+                            <p className="heading2">APP DESIGN</p>
+                            <p>VIEW PROJECTS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={require('../assets/home/desktop/image-graphic-design.jpg')} alt="Graphic design"/>
+                        <div className="overlay">
+                            <p className="heading2">GRAPHIC DESIGN</p>
+                            <p>VIEW PROJECTS</p>
+                        </div>
+                    </div>
             </Row>
         </>
     )

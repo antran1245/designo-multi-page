@@ -6,16 +6,64 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 10px;
-    img {
+
+
+    // Image styling with grid
+    div {
         padding: 0;
+        cursor: pointer;
+        position: relative;
+        // Overlay
+        .overlay {
+            color: App.$white;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: App.$peach;
+                opacity: 0.8;
+            }
+            p:nth-of-type(1) {
+                letter-spacing: 2px;
+            }
+            p:nth-of-type(2) {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 22px;
+            }
+        }
+        &:hover {
+            .overlay {
+                display: flex;
+            }
+        }
+    }
+    div, img, p {
         border-radius: 15px;
     }
-    img:nth-of-type(1) {
+    img {
+        width: 100%;
+    }
+    div:nth-of-type(1) {
         grid-row: 1 / span 2;
     }
-    img:nth-of-type(3) {
+    div:nth-of-type(4) {
         margin-top: auto;
     }
 }
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 768px) {
+    #projects {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        div:nth-of-type(1) {
+            grid-row: 1;
+        }
+    }
+}
