@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
             </Row>
             <Row id="projects">
-                    <div className="d-none d-md-block">
+                    <div className="d-none d-md-block row-2">
                         <img src={require('../assets/home/desktop/image-web-design-large.jpg')} alt="large web design"/>
                         <div className="overlay">
                             <p className="heading2">WEB DESIGN</p>
@@ -51,13 +51,16 @@ export default function Home() {
                             <p>VIEW PROJECTS</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="project-last">
                         <img src={require('../assets/home/desktop/image-graphic-design.jpg')} alt="Graphic design"/>
                         <div className="overlay">
                             <p className="heading2">GRAPHIC DESIGN</p>
                             <p>VIEW PROJECTS</p>
                         </div>
                     </div>
+            </Row>
+            <Row id="core">
+
             </Row>
         </>
     )
