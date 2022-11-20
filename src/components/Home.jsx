@@ -1,7 +1,12 @@
 import { Col, Row, Button } from "react-bootstrap";
 import singleCircle from '../assets/home/desktop/bg-pattern-hero-home.svg'
+import smallCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
+import passionate from '../assets/home/desktop/illustration-passionate.svg'
+import resourceful from '../assets/home/desktop/illustration-resourceful.svg'
+import friendly from '../assets/home/desktop/illustration-friendly.svg'
 import '../sass/home.scss'
 import '../sass/projects.scss'
+import '../sass/core.scss'
 
 export default function Home() {
     return(
@@ -60,7 +65,36 @@ export default function Home() {
                     </div>
             </Row>
             <Row id="core">
-
+                <Col lg={4}>
+                    <div className="imagesContainer">
+                        <img src={smallCircle} alt="smallCircle"/>
+                        <img src={passionate} alt="passionate"/>
+                    </div>
+                    <div className="text">
+                        <p>PASSIONATE</p>
+                        <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
+                    </div>
+                </Col>
+                <Col lg={4}>
+                    <div className="imagesContainer">
+                        <img src={smallCircle} alt="smallCircle"/>
+                        <img src={resourceful} alt="resourceful"/>
+                    </div>
+                    <div className="text">
+                        <p>RESOURCEFUL</p>
+                        <p>Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients&#39; needs.</p>
+                    </div>
+                </Col>
+                <Col lg={4}>
+                    <div className="imagesContainer">
+                        <img src={smallCircle} alt="smallCircle"/>
+                        <img src={friendly} alt="friendly"/>
+                    </div>
+                    <div className="text">
+                        <p>FRIENDLY</p>
+                        <p>We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
+                    </div>
+                </Col>
             </Row>
         </>
     )

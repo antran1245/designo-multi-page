@@ -1,0 +1,56 @@
+@use 'App';
+
+#core {
+    margin-top: 160px;
+    text-align: center;
+    .imagesContainer {
+        position: relative;
+        height: 202px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            position: absolute;
+        }
+    }
+    .text {
+        color: App.$darkGrey;
+
+        &:nth-child(1) {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 5px;
+        }
+        &:nth-child(2) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+// Tablet
+@media only screen and (max-width: 992px) {
+    #core {
+        & > div {
+            display: flex;
+            margin-bottom: 32px;
+        }
+        .text {
+            margin: auto;
+        }
+    }
+}
+
+// Phone
+@media only screen and (max-width: 576px) {
+    #core {
+        & > div {
+            display: block;
+        }
+        .text {
+            padding: 0 30px;
+        }
+    }
+}
