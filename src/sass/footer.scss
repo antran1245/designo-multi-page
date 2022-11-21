@@ -1,0 +1,38 @@
+@use 'App';
+
+#footer {
+    // height: 613px;
+    // margin-top: 160px;
+    background-color: App.$black;
+    color: App.$white;
+    display: flex;
+    align-items: center;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba($color: App.$white, $alpha: 0.1);
+        padding-bottom: 40px;
+        img {
+            width: 197px;
+            padding-left: 0;
+        }
+        div {
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0;
+            p{
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    .contact {
+        opacity: 0.5;
+        margin-top: 31px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import { Col, Row, Button } from "react-bootstrap";
+import Footer from "./Footer";
 import singleCircle from '../assets/home/desktop/bg-pattern-hero-home.svg'
 import smallCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
 import passionate from '../assets/home/desktop/illustration-passionate.svg'
