@@ -6,12 +6,24 @@
   font-family: 'Jost', normal;
 }
 
-#leaf-image {
+#leaf-image-left {
   position: absolute;
   top: 475px;
   left: 0;
   background: url('../src/assets/shared/desktop/bg-pattern-leaf.svg') center center no-repeat;
   background-size: cover;
+  width: 1006px;
+  height: 594px;
+  z-index: -1;
+}
+
+#leaf-image-right {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background: url('../src/assets/shared/desktop/bg-pattern-leaf.svg') center center no-repeat;
+  background-size: cover;
+  transform: rotate(180deg);
   width: 1006px;
   height: 594px;
   z-index: -1;

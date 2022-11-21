@@ -1,0 +1,33 @@
+@use 'App';
+
+#peach-Box {
+    background: url('../assets/shared/desktop/bg-pattern-call-to-action.svg') center center no-repeat;
+    background-position: 100%;
+    background-color: App.$peach;
+    border-radius: 15px;
+    padding: 72px 95px;
+    color: App.$white;
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: -52px;
+    z-index: 2;
+    position: relative;
+
+    button {
+        width: 152px;
+        height: 56px;
+        background-color: App.$white;
+        color: App.$darkGrey;
+        border: none;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 1;
+
+        &:hover {
+            background-color: App.$lightPeach;
+            color: App.$white;
+        }
+    }
+}

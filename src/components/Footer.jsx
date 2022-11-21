@@ -3,7 +3,8 @@ import '../sass/footer.scss'
 
 export default function Footer() {
     return(
-        <div id="footer">
+        <div id="footer" style={{height: "393px"}}>
+            <span id="leaf-image-right"></span>
             <Container>
                 <Row className='nav'>
                     <img src={require('../assets/shared/desktop/logo-light.png')} alt="logo light"/>

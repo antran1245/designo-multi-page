@@ -5,6 +5,7 @@ import smallCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
 import passionate from '../assets/home/desktop/illustration-passionate.svg'
 import resourceful from '../assets/home/desktop/illustration-resourceful.svg'
 import friendly from '../assets/home/desktop/illustration-friendly.svg'
+import GetInTouch from "./GetInTouch";
 import '../sass/home.scss'
 import '../sass/projects.scss'
 import '../sass/core.scss'
@@ -97,6 +98,7 @@ export default function Home() {
                     </div>
                 </Col>
             </Row>
+            <GetInTouch />
         </>
     )
 }

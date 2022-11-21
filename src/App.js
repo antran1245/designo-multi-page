@@ -11,7 +11,7 @@ function App() {
     <Container fluid className='p-0'>
       {/* Container for content width */}
       <Container>
-        <span id="leaf-image"></span>
+        <span id="leaf-image-left"></span>
         <Navigation />
         <Home/>
       </Container>
