@@ -31,7 +31,7 @@
 
 /* Tablet */
 @media only screen and (max-width: 992px) {
-  #leaf-image {
+  #leaf-image-left, #leaf-image-right {
     display: none;
   }
 }

@@ -1,9 +1,6 @@
 @use 'App';
 
-#peach-Box {
-    background: url('../assets/shared/desktop/bg-pattern-call-to-action.svg') center center no-repeat;
-    background-position: 100%;
-    background-color: App.$peach;
+#peach-project-box {
     border-radius: 15px;
     padding: 72px 95px;
     color: App.$white;

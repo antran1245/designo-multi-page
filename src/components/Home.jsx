@@ -13,7 +13,7 @@ import '../sass/core.scss'
 export default function Home() {
     return(
         <>
-            <Row id="headerBox" className="peach-box">
+            <Row id="headerBox">
                 <Col xs={12} lg={{offset: 1, span: 6}} id="headerText">
                     <Row>
                         <Col>

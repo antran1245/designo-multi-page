@@ -34,6 +34,7 @@ p {
 
 // Global peach box on all page
 .peach-box {
-    width: 100%;
+    background: url('../assets/shared/desktop/bg-pattern-call-to-action.svg') center center no-repeat;
+    background-position: 100%;
     background-color: $peach;
 }

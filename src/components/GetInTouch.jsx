@@ -3,7 +3,7 @@ import '../sass/getintouch.scss'
 
 export default function GetInTouch() {
     return(
-        <Row id="peach-Box">
+        <Row id="peach-project-box" className='peach-box'>
             <Col md={6}>
                 <Row>
                     <Col md={12} xl={8}>
