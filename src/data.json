@@ -1,0 +1,78 @@
+{
+    "web-design": [
+        {
+            "img": "/web-design/desktop/image-express.jpg",
+            "title": "EXPRESS",
+            "info": "A multi-carrier shipping website for ecommerce businesses"
+        },
+        {
+            "img": "/web-design/desktop/image-transfer.jpg",
+            "title": "TRANSFER",
+            "info": "Site for low-cost money transfers and sending money within seconds"
+        },
+        {
+            "img": "/web-design/desktop/image-photon.jpg",
+            "title": "PHOTON",
+            "info": "A state-of-the-art music player with high-resolution audio and DSP effects"
+        },
+        {
+            "img": "/web-design/desktop/image-builder.jpg",
+            "title": "BUILDER",
+            "info": "Connects users with local contractors based on their location"
+        },
+        {
+            "img": "/web-design/desktop/image-blogr.jpg",
+            "title": "BLOGR",
+            "info": "Blogr is a platform for creating an online blog or publication"
+        },
+        {
+            "img": "/web-design/desktop/image-camp.jpg",
+            "title": "CAMP",
+            "info": "Get expert training in coding, data, design, and digital marketing"
+        }
+    ],
+    "app-design": [
+        {
+            "img": "/app-design/desktop/image-airfilter.jpg",
+            "title": "AIRFILTER",
+            "info": "Solving the problem of poor indoor air quality by filtering the air"
+        },
+        {
+            "img": "/app-design/desktop/image-eyecam.jpg",
+            "title": "EYECAM",
+            "info": "Product that lets you edit your favorite photos and videos at any time"
+        },
+        {
+            "img": "/app-design/desktop/image-faceit.jpg",
+            "title": "FACEIT",
+            "info": "Get to meet your favorite internet superstar with the faceit app"
+        },
+        {
+            "img": "/app-design/desktop/image-todo.jpg",
+            "title": "TODO",
+            "info": "A todo app that features cloud sync with light and dark mode"
+        },
+        {
+            "img": "/app-design/desktop/image-loopstudios.jpg",
+            "title": "LOOPSTUDIOS",
+            "info": "A VR experience app made for Loopstudios"
+        }
+    ],
+    "graphic-design": [
+        {
+            "img": "/graphic-design/desktop/image-change.jpg",
+            "title": "TIM BROWN",
+            "info": "A book cover designed for Tim Brown’s new release, ‘Change’"
+        },
+        {
+            "img": "/graphic-design/desktop/image-boxed-water.jpg",
+            "title": "BOXED WATER",
+            "info": "A simple packaging concept made for Boxed Water"
+        },
+        {
+            "img": "/graphic-design/desktop/image-science.jpg",
+            "title": "SCIENCE!",
+            "info": "A poster made in collaboration with the Federal Art Project"
+        }
+    ]
+}
