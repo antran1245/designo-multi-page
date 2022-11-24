@@ -1,13 +1,15 @@
 import { Container } from 'react-bootstrap';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
+import Design from './components/Design';
 import Footer from "./components/Footer";
+import data from '../src/data.json'
 import './App.css';
 import './sass/App.scss'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Design from './components/Design';
 
 function App() {
+  console.log(data)
   return (
     <BrowserRouter>
       {/* Container for full width */}
@@ -18,7 +20,7 @@ function App() {
           <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='web' element={<Design/>}/>
+            <Route path='web' element={<Design data={data['web-design']}/>}/>
           </Routes>
         </Container>
         <Footer/>
