@@ -34,4 +34,12 @@
             margin-bottom: 0;
         }
     }
+    #links {
+        display: flex;
+        align-self: flex-end;
+        justify-content: flex-end;
+        img {
+            margin-left: 16px;
+        }
+    }
 }

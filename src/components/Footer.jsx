@@ -1,4 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import facebook from '../assets/shared/desktop/icon-facebook.svg'
+import youtube from '../assets/shared/desktop/icon-youtube.svg'
+import twitter from '../assets/shared/desktop/icon-twitter.svg'
+import pinterest from '../assets/shared/desktop/icon-pinterest.svg'
+import instagram from '../assets/shared/desktop/icon-instagram.svg'
 import '../sass/footer.scss'
 
 export default function Footer() {
@@ -27,6 +32,13 @@ export default function Footer() {
                             <p><b>P : +1 253-863-8967</b></p>
                             <p><b>M : contact@designo.co</b></p>
                         </div>
+                    </Col>
+                    <Col id='links'>
+                        <img src={facebook} alt="facebook"/>
+                        <img src={youtube} alt="youtube"/>
+                        <img src={twitter} alt="twitter"/>
+                        <img src={pinterest} alt="pinterest"/>
+                        <img src={instagram} alt="instagram"/>
                     </Col>
                 </Row>
             </Container>
