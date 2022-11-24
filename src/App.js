@@ -20,7 +20,8 @@ function App() {
           <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='web' element={<Design data={data['web-design']}/>}/>
+            <Route path='web' element={<Design data={data['web-design']}/>} />
+            <Route path='app' element={<Design data={data['app-design']}/>} />
           </Routes>
         </Container>
         <Footer/>

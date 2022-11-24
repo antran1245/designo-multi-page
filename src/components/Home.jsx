@@ -48,14 +48,14 @@ export default function Home() {
                             <p>VIEW PROJECTS</p>
                         </div>
                     </div>
-                    <div className="d-block d-md-none">
+                    <div className="d-block d-md-none" onClick={() => transition('web')}>
                         <img src={require('../assets/home/desktop/image-web-design-small.jpg')} alt="small web design"/>
                         <div className="overlay">
                             <p className="heading2">WEB DESIGN</p>
                             <p>VIEW PROJECTS</p>
                         </div>
                     </div>
-                    <div>
+                    <div onClick={() => transition('app')}>
                         <img src={require('../assets/home/desktop/image-app-design.jpg')} alt="app design"/>
                         <div className="overlay">
                             <p className="heading2">APP DESIGN</p>

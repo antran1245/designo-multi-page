@@ -1,3 +1,6 @@
+@use 'App';
+
+// Top peach box
 .design-box {
     display: flex;
     justify-content: center;
@@ -6,4 +9,38 @@
     border-radius: 15px;
     text-align: center;
     margin-bottom: 160px;
+}
+
+// Card
+#cards {
+    & > div {
+        margin-bottom: 16px;
+    }
+    .card {
+        background-color: #FDF3F0;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: App.$peach;
+            color: App.$white;
+
+            .card-title {
+                color: App.$white;
+            }
+        }
+    }
+    .card-body {
+        text-align: center;
+        padding: 16px 32px;
+
+        .card-title {
+            color: App.$peach;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 5px;
+        }
+    }
 }

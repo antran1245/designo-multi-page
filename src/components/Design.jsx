@@ -2,7 +2,6 @@ import { Card, Col, Row } from "react-bootstrap";
 import '../sass/design.scss'
 
 export default function Design({data}) {
-    console.log(data)
     return(
         <>
             <Row className="peach-box design-box">
@@ -11,10 +10,10 @@ export default function Design({data}) {
                     <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
                 </Col>
             </Row>
-            <Row>
+            <Row id="cards">
                 {data.map((item, index) => {
                 return <Col md={4} key={index}>
-                    <Card>
+                    <Card className="h-100">
                         <Card.Img variant="top" src={require(`../assets${item.img}`)}/>
                         <Card.Body>
                                 <Card.Title>{item.title}</Card.Title>
