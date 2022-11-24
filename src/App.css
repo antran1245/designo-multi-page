@@ -5,10 +5,13 @@
   margin: 0;
   font-family: 'Jost', normal;
 }
+#content {
+  position: relative;
+}
 
 #leaf-image-left {
   position: absolute;
-  top: 475px;
+  top: 17%;
   left: 0;
   background: url('../src/assets/shared/desktop/bg-pattern-leaf.svg') center center no-repeat;
   background-size: cover;
@@ -19,10 +22,10 @@
 
 #leaf-image-right {
   position: absolute;
-  bottom: 100%;
+  top: 63%;
   right: 0;
   background: url('../src/assets/shared/desktop/bg-pattern-leaf.svg') center center no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   transform: rotate(180deg);
   width: 1006px;
   height: 594px;

@@ -1,5 +1,5 @@
 import { Col, Row, Button } from "react-bootstrap";
-import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 import singleCircle from '../assets/home/desktop/bg-pattern-hero-home.svg'
 import smallCircle from '../assets/shared/desktop/bg-pattern-small-circle.svg'
 import passionate from '../assets/home/desktop/illustration-passionate.svg'
@@ -11,6 +11,10 @@ import '../sass/projects.scss'
 import '../sass/core.scss'
 
 export default function Home() {
+    const navigate = useNavigate()
+    const transition = (page) => {
+        navigate(page)
+    }
     return(
         <>
             <Row id="headerBox">
@@ -37,7 +41,7 @@ export default function Home() {
                 </div>
             </Row>
             <Row id="projects">
-                    <div className="d-none d-md-block row-2">
+                    <div className="d-none d-md-block row-2" onClick={() => transition('web')}>
                         <img src={require('../assets/home/desktop/image-web-design-large.jpg')} alt="large web design"/>
                         <div className="overlay">
                             <p className="heading2">WEB DESIGN</p>
@@ -99,6 +103,7 @@ export default function Home() {
                 </Col>
             </Row>
             <GetInTouch />
+            <span id="leaf-image-right"></span>
         </>
     )
 }
