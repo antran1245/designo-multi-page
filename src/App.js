@@ -9,7 +9,6 @@ import './App.css';
 import './sass/App.scss'
 
 function App() {
-  console.log(data)
   return (
     <BrowserRouter>
       {/* Container for full width */}
@@ -20,8 +19,9 @@ function App() {
           <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='web' element={<Design data={data['web-design']}/>} />
-            <Route path='app' element={<Design data={data['app-design']}/>} />
+            <Route path='web' element={<Design data={data['web-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
+            <Route path='app' element={<Design data={data['app-design']} designs={[{"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
+            <Route path='graphic' element={<Design data={data['graphic-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}]}/>} />
           </Routes>
         </Container>
         <Footer/>

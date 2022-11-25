@@ -13,6 +13,8 @@
         padding: 0;
         cursor: pointer;
         position: relative;
+        height: 100%;
+
         // Overlay
         .overlay {
             color: App.$white;
@@ -49,6 +51,7 @@
     }
     img {
         width: 100%;
+        height: 100%;
     }
     .row-2 {
         grid-row: 1 / span 2;

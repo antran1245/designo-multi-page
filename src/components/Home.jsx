@@ -62,7 +62,7 @@ export default function Home() {
                             <p>VIEW PROJECTS</p>
                         </div>
                     </div>
-                    <div className="project-last">
+                    <div className="project-last" onClick={() => transition('graphic')}>
                         <img src={require('../assets/home/desktop/image-graphic-design.jpg')} alt="Graphic design"/>
                         <div className="overlay">
                             <p className="heading2">GRAPHIC DESIGN</p>
