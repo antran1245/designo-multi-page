@@ -6,9 +6,12 @@
     padding: 0 !important;
 
     // Brand/Logo
-    .navbar-brand img {
-        width: 196px;
-        height: 24px;
+    .navbar-brand {
+        cursor: pointer;
+        img {
+            width: 196px;
+            height: 24px;
+        }
     }
 
     // Links

@@ -1,0 +1,34 @@
+@use 'App';
+
+// About Us Box
+#aboutUs {
+    background-color: App.$peach;
+    color: App.$white;
+    border-radius: 15px;
+    height: 480px;
+    :nth-child(1) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        div {
+            flex-direction: column;
+        }
+        img {
+            position: absolute;
+            top: -100px;
+            right: 0;
+        }
+    }
+    :nth-child(2) {
+        padding: 0%;
+        max-height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+}
