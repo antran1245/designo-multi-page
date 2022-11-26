@@ -46,6 +46,8 @@
     &>:nth-child(1) {
         padding-left: 0;
         img {
+            position: relative;
+            z-index: 2;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
@@ -54,8 +56,51 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        :nth-child(1) {
-            color: App.$peach;
+        position: relative;
+        div {
+            :nth-child(1) {
+                color: App.$peach;
+            }
+        }
+        img {
+            position: absolute;
+            left: -50%;
+            bottom: 0;
         }
     }
+}
+
+// real deal
+#realDeal {
+    margin-top: 160px;
+    background-color: #FDF3F0;
+    border-radius: 15px;
+    &>:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 60%;
+            margin: 0;
+            :nth-child(1) {
+                color: App.$peach;
+            }
+        }
+    }
+    &>:nth-child(2) {
+        padding-right: 0;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+}
+
+#leaf {
+    position: absolute;
+    right: -12%;
+    top: 50%;
+    z-index: -1;
 }

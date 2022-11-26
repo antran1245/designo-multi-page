@@ -1,0 +1,31 @@
+@use 'App';
+
+#countries {
+    .row > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin-top: 48px;
+            margin-bottom: 32px;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+        button {
+            background-color: App.$peach;
+            border: none;
+            padding: 18px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 1px;
+        }
+    }
+    .country-icon {
+        position: relative;
+        .circle {
+            position: absolute;
+        }
+    }
+}
