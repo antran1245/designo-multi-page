@@ -16,7 +16,7 @@ export default function Navigation() {
                 <Navbar.Collapse id='navbar-togglers'>
                     <Nav className='ms-auto'>
                         <Nav.Link onClick={() => transition('about')}>OUR COMPANY</Nav.Link>
-                        <Nav.Link href='#'>LOCATIONS</Nav.Link>
+                        <Nav.Link onClick={() => transition('locations')}>LOCATIONS</Nav.Link>
                         <Nav.Link href='#'>CONTACT</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
