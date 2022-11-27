@@ -16,6 +16,7 @@ export default function Design({data, designs}) {
     }
     return(
         <>
+            <span id="leaf-image-left"></span>
             <Row className="peach-box design-box">
                 <Col md={6}>
                     <p className="heading1">Web Design</p>

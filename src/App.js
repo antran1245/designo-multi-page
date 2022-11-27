@@ -17,7 +17,6 @@ function App() {
       <Container fluid className='p-0' id='content'>
         {/* Container for content width */}
         <Container>
-          <span id="leaf-image-left"></span>
           <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>

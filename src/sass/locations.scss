@@ -1,0 +1,30 @@
+@use 'App';
+
+// contact information
+.contact-box {
+    background-color: #FDF3F0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .heading2 {
+        color: App.$peach;
+    }
+    .info {
+        width: 540px;
+        display: flex;
+
+        div {
+            width: 255px;
+            margin-right: 30px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+// map image
+.map {
+    border-radius: 15px;
+}

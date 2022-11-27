@@ -17,6 +17,7 @@ export default function Home() {
     }
     return(
         <>
+            <span id="leaf-image-left"></span>
             <Row id="headerBox">
                 <Col xs={12} lg={{offset: 1, span: 6}} id="headerText">
                     <Row>

@@ -10,6 +10,7 @@ import '../sass/about.scss'
 export default function About() {
     return(
         <>
+            <span id="leaf-image-left"></span>
             <Row id="aboutUs">
                 <Col md={7}>
                     <img src={circle} alt="circle" className="circle"/>
