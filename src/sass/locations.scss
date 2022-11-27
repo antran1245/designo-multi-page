@@ -1,12 +1,21 @@
 @use 'App';
 
 // contact information
+.row {
+    margin-bottom: 32px;
+}
 .contact-box {
     background-color: #FDF3F0;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    .circle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
     .heading2 {
         color: App.$peach;
     }

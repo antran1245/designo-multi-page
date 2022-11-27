@@ -9,6 +9,7 @@ export default function Locations() {
             <Row>
                 <Col md={8} className="contact-box">
                     <div>
+                        <img src={twoCircle} alt="two circle" className='circle'/>
                         <p className='heading2'>Canada</p>
                         <div className='info'>
                             <div className='office'>
@@ -24,16 +25,17 @@ export default function Locations() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={4} className="pe-0 d-flex justify-content-end">
                     <img src={require('../assets/locations/desktop/image-map-canada.png')} alt="canada" className='map'/>
                 </Col>
             </Row>
             <Row>
-                <Col md={4}>
+                <Col md={4} className="ps-0 d-flex">
                     <img src={require('../assets/locations/desktop/image-map-australia.png')} alt="australia" className='map'/>
                 </Col>
-                <Col md={8}>
+                <Col md={8} className="contact-box">
                     <div>
+                        <img src={twoCircle} alt="two circle" className='circle'/>
                         <p className='heading2'>Australia</p>
                         <div className='info'>
                             <div className='office'>
@@ -53,6 +55,7 @@ export default function Locations() {
             <Row>
                 <Col md={8} className="contact-box">
                     <div>
+                        <img src={twoCircle} alt="two circle" className='circle'/>
                         <p className='heading2'>United Kingdom</p>
                         <div className='info'>
                             <div className='office'>
@@ -68,7 +71,7 @@ export default function Locations() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={4} className="pe-0 d-flex justify-content-end">
                     <img src={require('../assets/locations/desktop/image-map-united-kingdom.png')} alt="united kingdom" className='map'/>
                 </Col>
             </Row>
