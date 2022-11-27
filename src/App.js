@@ -4,9 +4,10 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Design from './components/Design';
 import Footer from "./components/Footer";
-import data from '../src/data.json'
 import About from './components/About';
 import Locations from './components/Locations';
+import Contact from './components/Contact';
+import data from '../src/data.json'
 import './App.css';
 import './sass/App.scss'
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='graphic' element={<Design data={data['graphic-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}]}/>} />
             <Route path='about' element={<About/>}/>
             <Route path='locations' element={<Locations/>}/>
+            <Route path='contact' element={<Contact/>}/>
           </Routes>
         </Container>
         <Footer/>

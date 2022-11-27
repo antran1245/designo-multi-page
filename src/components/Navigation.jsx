@@ -17,7 +17,7 @@ export default function Navigation() {
                     <Nav className='ms-auto'>
                         <Nav.Link onClick={() => transition('about')}>OUR COMPANY</Nav.Link>
                         <Nav.Link onClick={() => transition('locations')}>LOCATIONS</Nav.Link>
-                        <Nav.Link href='#'>CONTACT</Nav.Link>
+                        <Nav.Link onClick={() => transition('contact')}>CONTACT</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
