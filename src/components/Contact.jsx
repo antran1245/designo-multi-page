@@ -1,10 +1,22 @@
+import { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import circle from '../assets/contact/desktop/bg-pattern-hero-desktop.svg'
 import error from '../assets/contact/desktop/icon-error.svg'
 import Countries from "./Countries";
 import '../sass/contact.scss'
 
-export default function Contact() {
+const Contact = () => {
+    // Display errors on form
+    const [errors, setErrors] = useState({name: false, email: false, phone: false, message: false})
+    const [form, setForm] = useState({name: "", email: "", phone: "", message: ""})
+
+    const submitForm = (e) => {
+        e.preventDefault()
+        setErrors({name: form.name === "", email: form.email === "", phone: form.phone === "",  message: form.message === ""})
+        if(form.name !== "" && form.email !== "" && form.phone !== "" && form.message !== "") {
+            alert('Form submmited')
+        }
+    }
     return(
         <>
             <Row id="contact-container">
@@ -16,42 +28,58 @@ export default function Contact() {
                     </Col>
                 </Col>
                 <Col>
-                    <Form>
+                    <Form onSubmit={submitForm}>
                         <Form.Group as={Row}>
                             <Col>
-                                <Form.Control type="text" placeholder="Name"/>
+                                <Form.Control type="text" placeholder="Name" value={form.name} onChange={(e) => setForm({...form, name: e.target.value})}/>
                             </Col>
-                            <Col md={1} className="errorBox">
-                                <img src={error} alt="error icon"/>
-                            </Col>
+                            {
+                                errors.name?
+                                <Col md={3} className="errorBox">
+                                    <p>Can&#8217;t be empty</p>
+                                    <img src={error} alt="error icon"/>
+                                </Col> : null
+                            }
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Col>
-                                <Form.Control type="text" placeholder="Email Address"/>
+                                <Form.Control type="text" placeholder="Email Address" value={form.email} onChange={(e) => setForm({...form, email: e.target.value})}/>
                             </Col>
-                            <Col md={1} className="errorBox">
-                                <img src={error} alt="error icon"/>
-                            </Col>
+                            {
+                                errors.email?
+                                <Col md={3} className="errorBox">
+                                    <p>Can&#8217;t be empty</p>
+                                    <img src={error} alt="error icon"/>
+                                </Col> : null
+                            }
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Col>
-                                <Form.Control type="text" placeholder="Phone"/>
+                                <Form.Control type="text" placeholder="Phone" value={form.phone} onChange={(e) => setForm({...form, phone: e.target.value})}/>
                             </Col>
-                            <Col md={1} className="errorBox">
-                                <img src={error} alt="error icon"/>
-                            </Col>
+                            {
+                                errors.phone?
+                                <Col md={3} className="errorBox">
+                                    <p>Can&#8217;t be empty</p>
+                                    <img src={error} alt="error icon"/>
+                                </Col> : null
+                            }
                         </Form.Group>
                         <Form.Group as={Row}>
                             <Col>
-                                <Form.Control as={"textarea"} placeholder="Message"/>
+                                <Form.Control as={"textarea"} placeholder="Message" value={form.message} onChange={(e) => setForm({...form, message: e.target.value})}/>
                             </Col>
-                            <Col md={1} className="errorBox-textarea">
-                                <img src={error} alt="error icon"/>
-                            </Col>
+                            {
+                                errors.message?
+                                <Col md={3} className="errorBox">
+                                    <p>Can&#8217;t be empty</p>
+                                    <img src={error} alt="error icon"/>
+                                </Col> : null
+                            }
                         </Form.Group>
                         <Row id="form-button">
                             <Col>
-                                <Button>
+                                <Button type="submit">
                                     Submit
                                 </Button>
                             </Col>
@@ -63,3 +91,5 @@ export default function Contact() {
         </>
     )
 }
+
+export default Contact;

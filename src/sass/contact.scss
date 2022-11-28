@@ -39,6 +39,14 @@
         .errorBox {
             display: flex;
             align-items: center;
+            p {
+                font-size: 12px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 0;
+                margin-right: 8px;
+            }
         }
         #form-button {
             border-bottom: none;
