@@ -1,0 +1,62 @@
+@use 'App';
+
+#contact-container {
+    background-color: App.$peach;
+    color: App.$white;
+    border-radius: 15px;
+    #contact-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow-y: hidden;
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    form {
+        padding: 55px 0;
+        .row {
+            width: 90%;
+            border-bottom: 1px solid #FFFFFF;
+            input, textarea {
+                background-color: transparent;
+                border: none;
+                color: #FFFFFF;
+                &::placeholder {
+                    color: #FFFFFF;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            textarea {
+                resize: none;
+            }
+        }
+        .errorBox {
+            display: flex;
+            align-items: center;
+        }
+        #form-button {
+            border-bottom: none;
+            .col {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0;
+            }
+            button {
+                padding: 17px 48px;
+                color: App.$black;
+                background-color: App.$white;
+                border: none;
+                &:active {
+                    background-color: App.$lightPeach;
+                    color: App.$white;
+                }
+            }
+        }
+    }
+}
