@@ -78,12 +78,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         div {
             width: 60%;
             margin: 0;
             .heading2 {
                 color: App.$peach;
             }
+        }
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
     }
     &>:nth-child(2) {
