@@ -24,16 +24,16 @@ const Contact = () => {
                 <div className="circle-container d-block d-sm-none">
                     <img src={mobileCircle} alt="mobile circle"/>
                 </div>
-                <Col xs={12} md={8} xl={6} id="contact-text">
+                <Col xs={12} md={8} lg={6} xl={6} id="contact-text">
                     <div className="circle-container d-none d-sm-block">
                         <img src={circle} alt="circle" width={"100%"}/>
                     </div>
-                    <Col md={8}>
+                    <Col xs={12} lg={8}>
                         <p className="heading1">Contact Us</p>
                         <p>Ready to take it to the next level? Let&#8217;s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that&#8217;s relatable to your users, drop us a line.</p>
                     </Col>
                 </Col>
-                <Col xs={12} xl={5}>
+                <Col xs={12} lg={6}>
                     <Form onSubmit={submitForm}>
                         <Form.Group as={Row}>
                             <Col>

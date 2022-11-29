@@ -4,12 +4,12 @@
     background-color: App.$peach;
     color: App.$white;
     border-radius: 15px;
+    position: relative;
+    overflow-y: hidden;
     #contact-text {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        overflow-y: hidden;
         .circle-container {
             position: absolute;
             bottom: 0;
@@ -20,7 +20,7 @@
         padding: 55px 0;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         .row {
             width: 90%;
             border-bottom: 1px solid #FFFFFF;
@@ -72,20 +72,43 @@
     }
 }
 
+// Tablet
+@media only screen and (max-width: 992px) {
+    #contact-container {
+        padding: 71px 58px;
+        #contact-text {
+            width: 100%;
+            .circle-container {
+                top: -10%;
+            }
+        }
+        form {
+            position: relative;
+            padding-bottom: 0;
+            .row {
+                width: 100%;
+            }
+            #form-button {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 // Phone screen
 @media only screen and (max-width: 576px) {
     #contact-container {
         position: relative;
+        overflow-x: hidden;
+        padding: 72px 24px;
         .circle-container{
             position: absolute;
             left: -25%;
-            right: 25%;
+            top: 0;
         }
         #contact-text {
             overflow-x: hidden;
             z-index: 1;
             p {
-                padding: 0 24px;
                 font-size: 15px;
                 line-height: 25px;
                 text-align: center;
