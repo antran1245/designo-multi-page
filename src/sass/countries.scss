@@ -30,3 +30,13 @@
         }
     }
 }
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    #countries {
+        margin: 120px 0;
+        button {
+            margin-bottom: 48px;
+        }
+    }
+}
