@@ -23,7 +23,7 @@ export default function Countries() {
     return(
         <Row id="countries">
             {data.map((item, index) => {
-                return <Col key={index}>
+                return <Col key={index} xs={12} lg={4}>
                             <Row>
                                 <Col className="country-icon">
                                     <img src={smallCircle} alt="small circle" className="circle"/>
