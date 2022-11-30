@@ -21,10 +21,11 @@
     }
     .info {
         width: 540px;
+        min-width: 100%;
         display: flex;
 
         div {
-            width: 255px;
+            width: 50%;
             margin-right: 30px;
             p {
                 margin: 0;
@@ -34,6 +35,50 @@
 }
 
 // map image
-.map {
-    border-radius: 15px;
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    .map {
+        border-radius: 15px;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    .row {
+        margin-bottom: 40px;
+        div {
+            padding: 0;
+        }
+    }
+    .contact-box {
+        border-radius: 0;
+        overflow: hidden;
+        > div {
+            padding: 80px 24px;
+        }
+        .circle {
+            top: 0;
+        }
+        .heading2 {
+            font-size: 32px;
+        }
+        .info {
+            display: block;
+            width: 100%;
+            text-align: center;
+            div {
+                width: 100%;
+            }
+            .office {
+                margin: 24px 0;
+            }
+        }
+    }
+    .image-container {
+        .map {
+            border-radius: 0;
+            width: 100%;
+        }
+    }
 }

@@ -1,15 +1,17 @@
 import { Col, Row } from 'react-bootstrap'
 import GetInTouch from './GetInTouch'
 import twoCircle from '../assets/shared/desktop/bg-pattern-two-circles.svg'
+import threeCircle from '../assets/shared/desktop/bg-pattern-three-circles.svg'
 import '../sass/locations.scss'
 
 export default function Locations() {
     return(
         <>
             <Row>
-                <Col md={8} className="contact-box">
+                <Col xs={{order: 2, span: 12}} lg={{order: 1, span: 8}} className="contact-box">
                     <div>
-                        <img src={twoCircle} alt="two circle" className='circle'/>
+                        <img src={twoCircle} alt="two circle" className='circle d-none d-sm-block'/>
+                        <img src={threeCircle} alt="three circle" className='circle d-block d-sm-none'/>
                         <p className='heading2'>Canada</p>
                         <div className='info'>
                             <div className='office'>
@@ -25,17 +27,18 @@ export default function Locations() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} className="pe-0 d-flex justify-content-end">
+                <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 4}} className="pe-0 image-container">
                     <img src={require('../assets/locations/desktop/image-map-canada.png')} alt="canada" className='map'/>
                 </Col>
             </Row>
             <Row>
-                <Col md={4} className="ps-0 d-flex">
+                <Col lg={4} className="ps-0 image-container justify-content-lg-start">
                     <img src={require('../assets/locations/desktop/image-map-australia.png')} alt="australia" className='map'/>
                 </Col>
-                <Col md={8} className="contact-box">
+                <Col lg={8} className="contact-box">
                     <div>
-                        <img src={twoCircle} alt="two circle" className='circle'/>
+                        <img src={twoCircle} alt="two circle" className='circle d-none d-sm-block'/>
+                        <img src={threeCircle} alt="three circle" className='circle d-block d-sm-none'/>
                         <p className='heading2'>Australia</p>
                         <div className='info'>
                             <div className='office'>
@@ -53,9 +56,10 @@ export default function Locations() {
                 </Col>
             </Row>
             <Row>
-                <Col md={8} className="contact-box">
+                <Col xs={{order: 2, span: 12}} lg={{order: 1, span: 8}} className="contact-box">
                     <div>
-                        <img src={twoCircle} alt="two circle" className='circle'/>
+                        <img src={twoCircle} alt="two circle" className='circle d-none d-sm-block'/>
+                        <img src={threeCircle} alt="three circle" className='circle d-block d-sm-none'/>
                         <p className='heading2'>United Kingdom</p>
                         <div className='info'>
                             <div className='office'>
@@ -71,7 +75,7 @@ export default function Locations() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4} className="pe-0 d-flex justify-content-end">
+                <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 4}} className="pe-0 image-container">
                     <img src={require('../assets/locations/desktop/image-map-united-kingdom.png')} alt="united kingdom" className='map'/>
                 </Col>
             </Row>
