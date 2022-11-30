@@ -28,3 +28,15 @@
         }
     }
 }
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    #peach-project-box {
+        padding: 64px 24px;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
