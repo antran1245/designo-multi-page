@@ -17,8 +17,8 @@ function App() {
       {/* Container for full width */}
       <Container fluid className='p-0' id='content'>
         {/* Container for content width */}
+        <Navigation />
         <Container>
-          <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='web' element={<Design title={'Web Design'} detail={"We build websites that serve as powerful marketing tools and bring memorable brand experiences."} data={data['web-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
