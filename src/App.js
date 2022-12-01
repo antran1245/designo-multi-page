@@ -21,9 +21,9 @@ function App() {
           <Navigation />
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='web' element={<Design data={data['web-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
-            <Route path='app' element={<Design data={data['app-design']} designs={[{"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
-            <Route path='graphic' element={<Design data={data['graphic-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}]}/>} />
+            <Route path='web' element={<Design title={'Web Design'} detail={"We build websites that serve as powerful marketing tools and bring memorable brand experiences."} data={data['web-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
+            <Route path='app' element={<Design title={'App Design'} detail={"Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."} data={data['app-design']} designs={[{"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}, {"img": "image-graphic-design.jpg", "title": "GRAPHIC DESIGN"}]}/>} />
+            <Route path='graphic' element={<Design title={'Graphic Design'} detail={"We deliver eye-catching branding materials that are tailored to meet your business objectives."} data={data['graphic-design']} designs={[{"img": "image-app-design.jpg", "title": "APP DESIGN"}, {"img": "image-web-design-small.jpg", "title": "WEB DESIGN"}]}/>} />
             <Route path='about' element={<About/>}/>
             <Route path='locations' element={<Locations/>}/>
             <Route path='contact' element={<Contact/>}/>

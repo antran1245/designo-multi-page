@@ -13,25 +13,27 @@ export default function About() {
         <>
             <span id="leaf-image-left"></span>
             <Row id="aboutUs">
-                <Col xs={{order: 2, span: 12}} md={{order: 1, span: 7}}>
-                    <img src={circle} alt="circle" className="circle d-none d-sm-block"/>
+                <Col xs={{order: 2, span: 12}} lg={{order: 1, span: 7}}>
+                    <img src={circle} alt="circle" className="circle d-none d-md-block"/>
                     <img src={mobileCircle} alt="mobile Circle" className="circle d-block d-sm-none"/>
                     <div>
                         <p className="heading1">About Us</p>
                         <p>Founded in 2010, we are a creative agency that produces lasting results for our clients. We&#8217;ve partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We&#8217;re always looking forward to creating brands, products, and digital experiences that connect with our clients&#8217; audiences.</p>
                     </div>
                 </Col>
-                <Col xs={{order: 1, span: 12}} md={{order: 2, span: 5}}>
+                <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 5}}>
                     <img src={require('../assets/about/desktop/image-about-hero.jpg')} alt="about us" className="d-none d-lg-block"/>
-                    <img src={require('../assets/about/mobile/image-about-hero.jpg')} alt="about us" className="d-block d-sm-none"/>
+                    <img src={require('../assets/about/tablet/image-about-hero.jpg')} alt="about us" className="d-none d-md-block d-lg-none"/>
+                    <img src={require('../assets/about/mobile/image-about-hero.jpg')} alt="about us" className="d-block d-md-none"/>
                 </Col>
             </Row>
             <Row id="worldClassTalent">
-                <Col lg={5}>
+                <Col xs={12} lg={5}>
                     <img src={require('../assets/about/desktop/image-world-class-talent.jpg')} alt="world class talent" className="d-none d-lg-block"/>
-                    <img src={require('../assets/about/mobile/image-world-class-talent.jpg')} alt="world class talent" className="d-block d-sm-none"/>
+                    <img src={require('../assets/about/tablet/image-world-class-talent.jpg')} alt="world class talent" className="d-none d-md-block d-lg-none"/>
+                    <img src={require('../assets/about/mobile/image-world-class-talent.jpg')} alt="world class talent" className="d-block d-md-none"/>
                 </Col>
-                <Col lg={{span: 5, offset: 1}}>
+                <Col xs={12} lg={{span: 5, offset: 1}}>
                     <img src={threeCircle} alt="three cirlces" />
                     <div>
                         <p className="heading2">World-class talent</p>
@@ -57,7 +59,8 @@ We are visual storytellers in appealing and captivating ways. By combining busin
                 </Col>
                 <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 5}}>
                     <img src={require('../assets/about/desktop/image-real-deal.jpg')} alt="real deal" className="d-none d-lg-block"/>
-                    <img src={require('../assets/about/mobile/image-real-deal.jpg')} alt="real deal" className="d-block d-sm-none"/>
+                    <img src={require('../assets/about/tablet/image-real-deal.jpg')} alt="real deal" className="d-none d-md-block d-lg-none"/>
+                    <img src={require('../assets/about/mobile/image-real-deal.jpg')} alt="real deal" className="d-block d-md-none"/>
                 </Col>
             </Row>
             <GetInTouch />

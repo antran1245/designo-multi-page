@@ -35,8 +35,9 @@
 // Tablet
 @media only screen and (max-width: 992px) {
     #countries {
-        & > div {
-            margin-bottom: 80px;
+        margin: 120px 0;
+        & > div:not(:first-child) {
+            margin-top: 80px;
         }
     }
 }

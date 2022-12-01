@@ -22,6 +22,10 @@
         border-radius: 15px;
         cursor: pointer;
 
+        img {
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
         &:hover {
             background-color: App.$peach;
             color: App.$white;
@@ -84,6 +88,41 @@
     }
 }
 
+// Tablet
+@media only screen and (max-width: 992px) {
+    .design-box {
+        padding: 64px 100px;
+
+    }
+    #cards {
+        & > div {
+            padding: 0;
+        }
+        .card {
+            width: 100%;
+            flex-direction: row;
+            img {
+                max-width: 50%;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 15px;
+                border-top-left-radius: 15px;
+            }
+            .card-body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+    }
+    #other-designs {
+        & > div {
+            padding: 0;
+            margin-top: 24px;
+        }
+    }
+}
+
 // Mobile
 @media only screen and (max-width: 576px) {
     .design-box {
@@ -95,12 +134,23 @@
         & > div {
             margin-bottom: 40px;
         }
+        .card {
+            flex-direction: column;
+            img {
+                max-width: 100%;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 0;
+            }
+        }
     }
     #other-designs {
         display: flex;
         justify-content: center;
-        & > div {
-            margin-top: 24px;
+        .heading1 {
+            font-size: 28px;
+            line-height: 36px;
+            letter-spacing: 1.4px;
         }
     }
 }
