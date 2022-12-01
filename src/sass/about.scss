@@ -26,6 +26,8 @@
             right: 0;
         }
     }
+
+    // image that goes with the text
     &>:nth-child(2) {
         padding: 0%;
         max-height: 100%;
@@ -43,6 +45,8 @@
     background-color: #FDF3F0;
     border-radius: 15px;
     margin-top: 160px;
+
+    // image that goes with the text
     &>:nth-child(1) {
         padding-left: 0;
         img {
@@ -92,6 +96,8 @@
             left: 0;
         }
     }
+
+    // image that goes with the text
     &>:nth-child(2) {
         padding-right: 0;
         display: flex;
@@ -108,4 +114,98 @@
     right: -12%;
     top: 50%;
     z-index: -1;
+}
+
+// Tablet
+@media only screen and (max-width: 992px) {}
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    #aboutUs {
+        height: auto;
+        border-radius: 0;
+        margin-bottom: 0;
+        &>:nth-child(1) {
+            z-index: 1;
+            text-align: center;
+            padding: 80px 24px;
+            > div {
+                margin: 0;
+                width: 100%;
+            }
+            img {
+                z-index: -1;
+            }
+            p:not(.heading1) {
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .heading1 {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+
+        // image that goes with the text
+        &>:nth-child(2) {
+            img {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+    #worldClassTalent {
+        margin-top: 0;
+        border-radius: 0;
+        text-align: center;
+
+        // image that goes with the text
+        &>:nth-child(1) {
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+        &>:nth-child(2) {
+            padding: 80px 24px;
+            img {
+                left: 0;
+            }
+            div p:not(.heading2) {
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .heading2 {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+    }
+    #realDeal {
+        &>:nth-child(1) {
+            text-align: center;
+            overflow: hidden;
+            padding: 80px 24px;
+            div {
+                width: 100%;
+            }
+            div p:not(.heading2) {
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .heading2 {
+                font-size: 32px;
+                line-height: 36px;
+            }
+            img {
+                top: 0;
+            }
+        }
+        &>:nth-child(2) {
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+    }
 }
