@@ -67,6 +67,39 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    #projects {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        .row-2 {
+            grid-row: 1;
+        }
+        div.overlay {
+            display: block;
+            background-color: App.$black;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: App.$black;
+                opacity: 0.8;
+            }
+            .heading2 {
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 1.4px;
+            }
+            p:not(.heading2) {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #projects {
         grid-template-columns: auto;
