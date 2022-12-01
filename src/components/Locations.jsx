@@ -28,12 +28,14 @@ export default function Locations() {
                     </div>
                 </Col>
                 <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 4}} className="pe-0 image-container">
-                    <img src={require('../assets/locations/desktop/image-map-canada.png')} alt="canada" className='map'/>
+                    <img src={require('../assets/locations/desktop/image-map-canada.png')} alt="canada" className='map d-block d-sm-none d-lg-block'/>
+                    <img src={require('../assets/locations/tablet/image-map-canada.png')} alt="canada" className='map d-none d-sm-block d-lg-none'/>
                 </Col>
             </Row>
             <Row>
                 <Col lg={4} className="ps-0 image-container justify-content-lg-start">
-                    <img src={require('../assets/locations/desktop/image-map-australia.png')} alt="australia" className='map'/>
+                    <img src={require('../assets/locations/desktop/image-map-australia.png')} alt="australia" className='map d-block d-sm-none d-lg-block'/>
+                    <img src={require('../assets/locations/tablet/image-map-australia.png')} alt="australia" className='map d-none d-sm-block d-lg-none'/>
                 </Col>
                 <Col lg={8} className="contact-box">
                     <div>
@@ -76,7 +78,8 @@ export default function Locations() {
                     </div>
                 </Col>
                 <Col xs={{order: 1, span: 12}} lg={{order: 2, span: 4}} className="pe-0 image-container">
-                    <img src={require('../assets/locations/desktop/image-map-united-kingdom.png')} alt="united kingdom" className='map'/>
+                    <img src={require('../assets/locations/desktop/image-map-united-kingdom.png')} alt="united kingdom" className='map d-block d-sm-none d-lg-block'/>
+                    <img src={require('../assets/locations/tablet/image-map-uk.png')} alt="united kingdom" className='map d-none d-sm-block d-lg-none'/>
                 </Col>
             </Row>
             <GetInTouch/>

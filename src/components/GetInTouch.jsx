@@ -4,7 +4,7 @@ import '../sass/getintouch.scss'
 export default function GetInTouch() {
     return(
         <Row id="peach-project-box" className='peach-box'>
-            <Col xs={10} md={6}>
+            <Col xs={10} md={8} lg={6}>
                 <Row>
                     <Col md={12} xl={8}>
                         <p className='heading2'>Let's talk about your project</p>
@@ -16,7 +16,7 @@ export default function GetInTouch() {
                     </Col>
                 </Row>
             </Col>
-            <Col className='d-flex justify-content-center justify-content-sm-end'>
+            <Col md={5} className='d-flex justify-content-center justify-content-lg-end'>
                 <Button>GET IN TOUCH</Button>
             </Col>
         </Row>

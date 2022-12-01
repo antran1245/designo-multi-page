@@ -43,6 +43,20 @@
     }
 }
 
+// Tablet
+@media only screen and (max-width: 992px) {
+    .contact-box {
+        padding: 88px 74px;
+    }
+    .image-container {
+        padding: 0 !important;
+        margin-bottom: 31px;
+        .map {
+            width: 100%;
+        }
+    }
+}
+
 // Mobile
 @media only screen and (max-width: 576px) {
     .row {
@@ -52,6 +66,7 @@
         }
     }
     .contact-box {
+        text-align: center;
         border-radius: 0;
         overflow: hidden;
         > div {
@@ -77,9 +92,9 @@
         }
     }
     .image-container {
+        margin-bottom: 0;
         .map {
             border-radius: 0;
-            width: 100%;
         }
     }
 }

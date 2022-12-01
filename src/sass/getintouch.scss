@@ -29,6 +29,14 @@
     }
 }
 
+// Tablet
+@media only screen and (max-width: 992px) {
+    #peach-project-box {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 // Mobile
 @media only screen and (max-width: 576px) {
     #peach-project-box {
