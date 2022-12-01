@@ -25,7 +25,7 @@ export default function Design({data, designs}) {
             </Row>
             <Row id="cards">
                 {data.map((item, index) => {
-                return <Col md={4} key={index}>
+                return <Col xs={11} lg={4} key={index}>
                     <Card className="h-100">
                         <Card.Img variant="top" src={require(`../assets${item.img}`)}/>
                         <Card.Body>
@@ -38,7 +38,7 @@ export default function Design({data, designs}) {
             </Row>
             <Row id="other-designs">
                 {designs.map((item, index) => {
-                    return <Col key={index}>
+                    return <Col xs={11} lg={6} key={index}>
                         <Card onClick={() => transition(item.title)}>
                             <Card.Img src={require(`../assets/home/desktop/${item.img}`)}/>
                             <Card.ImgOverlay>

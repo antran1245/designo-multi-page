@@ -83,3 +83,24 @@
         }
     }
 }
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    .design-box {
+        padding: 105px 24px;
+        border-radius: 0;
+    }
+    #cards {
+        justify-content: center;
+        & > div {
+            margin-bottom: 40px;
+        }
+    }
+    #other-designs {
+        display: flex;
+        justify-content: center;
+        & > div {
+            margin-top: 24px;
+        }
+    }
+}
