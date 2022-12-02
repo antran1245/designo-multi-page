@@ -45,8 +45,23 @@
 
 // Tablet
 @media only screen and (max-width: 992px) {
+    .row {
+        overflow: hidden;
+    }
     .contact-box {
-        padding: 88px 74px;
+        padding: 88px 70px;
+        & > div {
+            width: 80%;
+        }
+        .info {
+            width: 100%;
+            div {
+                width: 100%;
+            }
+        }
+    }
+    img {
+        z-index: -1;
     }
     .image-container {
         padding: 0 !important;
