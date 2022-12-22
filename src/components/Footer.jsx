@@ -1,4 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 import facebook from '../assets/shared/desktop/icon-facebook.svg'
 import youtube from '../assets/shared/desktop/icon-youtube.svg'
 import twitter from '../assets/shared/desktop/icon-twitter.svg'
@@ -7,17 +8,22 @@ import instagram from '../assets/shared/desktop/icon-instagram.svg'
 import '../sass/footer.scss'
 
 export default function Footer() {
+    const navigate = useNavigate()
+    const transition = (page) => {
+        window.scrollTo({behavior: 'smooth', top: -100})
+        navigate(`/${page}`)
+    }
     return(
         <div id="footer">
             <Container>
                 <Row className='nav'>
                     <div className='image-container'>
-                        <img src={require('../assets/shared/desktop/logo-light.png')} alt="logo light"/>
+                        <img src={require('../assets/shared/desktop/logo-light.png')} alt="logo light" onClick={() => transition('')}/>
                     </div>
                     <div className='nav-links'>
-                        <p>OUR COMPANY</p>
-                        <p>LOCATIONS</p>
-                        <p>CONTACT</p>
+                            <p onClick={() => transition('about')}>OUR COMPANY</p>
+                            <p onClick={() => transition('locations')}>LOCATIONS</p>
+                            <p onClick={() => transition('contact')}>CONTACT</p>
                     </div>
                 </Row>
                 <Row className='contact'>
